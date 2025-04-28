@@ -1,0 +1,45 @@
+# Environment Manager Default Configuration
+
+system:
+  # How often to check environment (seconds)
+  check_frequency: 60
+  # Start minimized to system tray
+  start_minimized: true
+  # Start with Windows
+  auto_start: true
+  # Data storage location (leave blank for default)
+  data_path: ""
+
+adapters:
+  lighting:
+    enabled: true
+    default_brightness: 75
+    default_color_temp: 4000
+    
+  sound:
+    enabled: true
+    default_volume: 50
+    default_profile: "normal"
+    
+  workspace:
+    enabled: true
+    default_arrangement: "default"
+    default_desktop: "default"
+    
+machine_learning:
+  # How often to retrain model (hours)
+  training_frequency: 12
+  # Minimum data points needed for training
+  min_training_data: 10
+  # Confidence threshold for making changes
+  confidence_threshold: 0.7
+  
+user_interface:
+  # Show notifications when environment changes
+  show_notifications: true
+  # Prompt for feedback occasionally
+  request_feedback: true
+  # How often to request feedback (minutes)
+  feedback_frequency: 120
+  # Theme (light/dark)
+  theme: "system"
